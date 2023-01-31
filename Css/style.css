@@ -1,5 +1,5 @@
  @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Holtwood+One+SC&display=swap'); 
-
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
 .titulo
 {
     display: flex;
@@ -130,6 +130,7 @@ footer{
     width: auto;
     align-items: center;
     margin: 10px;
+   
     }
 
     .produn1:hover{
@@ -175,7 +176,7 @@ footer{
     flex-direction: row;
     justify-content: center;
     border: 50%;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 40px;
     color: brown;
     font-size: 30px;
@@ -299,7 +300,9 @@ footer{
         margin-left: 10px; 
         }   
             .producto-text{
-            font-family: 'Ubuntu', sans-serif
+                font-family: 'Nunito', sans-serif;
+            justify-content: center;
+            margin-top: 10px;
             }
 
 .texto-boca{
