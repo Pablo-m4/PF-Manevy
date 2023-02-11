@@ -1,102 +1,120 @@
- @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Holtwood+One+SC&display=swap'); 
- @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Holtwood+One+SC&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
 
- body{
+body{
     background-image: url(../Images/stylish-hexagonal-line-pattern-background_1017-19742.jpg); 
     background-repeat:repeat ;
     backface-visibility: 70%;
     display: grid;}
 
+
 .titulo{
     display: grid;
-    justify-content: center;}
+    justify-content: center;
+    :hover{
+        color: rgb(114, 0, 0);
+        cursor: pointer;
+        }
+        .titulo-texto{
+            font-family: 'Rubik Bubbles', cursive;
+            font-size: $textL ;
+   
+            }
+        }
 
-.titulo-texto{
-    font-size: 50px;
-    font-family: 'Rubik Bubbles', cursive;}
-        
-.titulo-texto:hover{
-    color: rgb(114, 0, 0);
-    cursor: pointer;}
-
-.head{ display: grid;
+.head{
+    display: grid;
     grid-template-columns: auto auto auto auto;
-   justify-content: center;
+    justify-content: center;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold; font-weight: bolder;
-    border-style: solid; border-color: black; border-width: thin;
-    background-color:  rgba(165, 42, 42, 0.801);}
-
-.internacional{display: grid; justify-content: center; margin-left: 15px;}
-
-.Ligaa{display: grid; justify-content: center; margin-left: 15px;}
-
-.Premi{display: grid; justify-content: center; margin-left: 15px;}
-
-.ayud{display: grid; justify-content: center; margin-left: 15px;}
-      
-    .internacional:hover{
+    font-weight: $textBold;
+    border-style: solid; border-color: $secondary; border-width: thin;
+    background-color: $mainColor;
+    .internacional  {
+        display: grid; justify-content:center; margin-left: $Margin;
+        :hover{
             transform: scale(1.2);
-            cursor: pointer;
-            transition: all 1s; }
-    .Ligaa:hover{
+                cursor: pointer;
+                transition: all 1s;
+        }
+    }
+    .Ligaa{
+        display: grid; justify-content:center; margin-left: $Margin;
+        :hover{
             transform: scale(1.2);
-            cursor: pointer;
-            transition: all 1s;}
-    .Premi:hover{
+                cursor: pointer;
+                transition: all 1s;
+        }
+    }
+    .Premi {
+        display: grid; justify-content: center; margin-left: $Margin;
+        :hover{
             transform: scale(1.2);
-            cursor: pointer;
-            transition: all 1s;}
-    .ayud:hover{
+                cursor:pointer;
+                transition: all 1s;
+        }
+    }
+    .ayud{
+        display:grid; justify-content:center; margin-left: $Margin;
+        :hover{
             transform: scale(1.2);
-            cursor: pointer;
-            transition: all 1s;}
-
-a{      
-    display: flex;
+                cursor: pointer;
+                transition: all 1s;
+        }
+    }
+    
+}
+a{
+    display:flex;
     text-decoration: none;
-    font-size: 20px;
-    padding-right: 15px;
-    color: black;}
-            
-
-
+    font-size: $textS;
+    padding-right:15px;
+    color: $secondary;
+}
 .oferta{
     font-family: 'Holtwood One SC', serif;
-    display: flex;
+    display:flex;
     flex-direction: row;
     justify-content: center;
-    border: 50%;
+    border:50%;
     margin-top: 40px;
-    text-decoration: underline; color: rgb(221, 4, 4);
-    font-size: 30px;
-    overflow: hidden;}
+    text-decoration: underline; color:$Keycolor ;
+    font-size:$textM;
+    overflow: hidden;
+}
 
 .produccion{
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content:space-around;}    
+    justify-content:space-around;
+    
+    
+}
 
-    .producto-text1{
-        font-family: 'Nunito', sans-serif;
-        justify-content: center;
-        margin-top: 10px;}
-
+.produn1{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-bottom: 20px;
     .producto-1{        
         height: 250px;
         width: auto;
-        align-items: center;}
+        align-items: center;
+    }
     
-    .produn1{
-        display: grid;
-        grid-template-columns: auto auto;
+    .producto-text1{
+        font-family: 'Nunito', sans-serif;
+        font-size: $textM;
         justify-content: center;
-        margin-bottom: 20px;}
+        margin-top: 10px;
+    }
+ 
+}
 
-        .produn1:hover{
-            transform: scale(0.9);
-            cursor: pointer;
-            transition: all 1s;}
+.produn1:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+    transition: all 1s;}  
 
 .sale-1{
     font-family: 'Bakbak One', cursive;
@@ -105,34 +123,29 @@ a{
     border: 50%;
     margin-top: 60px;
     margin-bottom: 40px;
-    color: brown;
-    font-size: 30px;
+    color: $mainColor;
+    font-size: $textM;
     overflow: hidden;}
-               
+
 .header{
     display: flex;
     font-family: 'Holtwood One SC', serif;
     flex-direction: row;
     justify-content: center;
-    margin-top: 15px;}
-
-#selecciones{
+    margin-top: 15px;
+    .banderas{
+        height: 100px;
+        width: auto}
+    #selecciones{
     margin-top: 27px;}
-
-.banderas{
-    height: 100px;
-    width: auto}
-
-.bandera-ing{
-
-    margin-top: 27px;
-    height: 100px;
-    width: auto}
-
-.premier-h{
+    .bandera-ing{
+        margin-top: 27px;
+        height: 100px;
+        width: auto}
+    .premier-h{
     margin-top: 30px;
     margin-bottom: 30px;}
-
+}
 .header-mundi{
     font-family: 'Bakbak One', cursive;
     display: flex;
@@ -141,8 +154,8 @@ a{
     border: 50%;
     margin-top: 40px;
     margin-bottom: 40px;
-    text-decoration: underline; color: rgb(221, 4, 4);
-    font-size: 30px;
+    text-decoration: underline; color:$Keycolor;
+    font-size: $textM;
     overflow: hidden;}
 
 .header-arg{
@@ -154,19 +167,8 @@ a{
     margin-bottom: 0px;
     margin-left: 60px;
     text-decoration: underline; color: rgb(1, 19, 184);
-    font-size: 30px;
-    overflow: hidden;}
-
-.boca{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;}
-
-.prod-arg{
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 50px;}
+    font-size: $textM;
+    overflow: hidden;}  
 
 .producto-text{
     font-family: 'Bakbak One', cursive;
@@ -176,7 +178,7 @@ a{
 .form{
     margin-top: 30px;
     font-family: 'Bakbak One', cursive;
-    background-color:  rgba(165, 42, 42, 0.637);
+    background-color: $mainColor;
     margin-bottom: 30px;}
 
 .formulario{
@@ -189,14 +191,12 @@ justify-content: center;
 margin-bottom: 0px;
 width: 100%;
 height: 60px;
-background-color: rgba(165, 42, 42, 0.801);}
-
+background-color: $mainColor;
 .icons{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;}
-
+    justify-content: center;
     .icon-1{
         display: flex;
         height: 25px;
@@ -217,6 +217,8 @@ background-color: rgba(165, 42, 42, 0.801);}
         height: 25px;
         width: 25px;
         margin-top: 15px;}
+    }
+}
 
 @media (max-width:660px){
     .head {
@@ -235,5 +237,4 @@ background-color: rgba(165, 42, 42, 0.801);}
 @media (max-width: 1225px){
     .produccion{
         grid-template-columns: auto;
-        justify-content: center;}}   
- 
+        justify-content: center;}}  

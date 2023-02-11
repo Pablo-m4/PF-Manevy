@@ -1,8 +1,4 @@
-body{
-    background-image: url(../Images/stylish-hexagonal-line-pattern-background_1017-19742.jpg); 
-    background-repeat:repeat ;
-    backface-visibility: 70%;
-    display: grid;   
-}
-
+@import "_vars";
+@import "_fonts";
+@import "_commons";
 
