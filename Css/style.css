@@ -9,26 +9,15 @@
 
 .titulo{
     display: grid;
-    justify-content: center;
-     }
+    justify-content: center;}
 
 .titulo-texto{
     font-size: 50px;
     font-family: 'Rubik Bubbles', cursive;}
         
-    .titulo-texto:hover{
-        color: rgb(114, 0, 0);
-        cursor: pointer;}
-
-
-
-.internacional{ display: grid; justify-content: center; margin-left: 15px;}
-
-.Ligaa{ display: grid; justify-content: center; margin-left: 15px;}
-
-.Premi{ display: grid; justify-content: center; margin-left: 15px;}
-
-.ayud{ display: grid; justify-content: center; margin-left: 15px;}
+.titulo-texto:hover{
+    color: rgb(114, 0, 0);
+    cursor: pointer;}
 
 .head{ display: grid;
     grid-template-columns: auto auto auto auto;
@@ -38,13 +27,14 @@
     border-style: solid; border-color: black; border-width: thin;
     background-color:  rgba(165, 42, 42, 0.801);}
 
-        
-.contenedor1{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold; font-weight: bolder;
-    border-style: solid; border-color: black; border-width: thin;
-    background-color:  rgba(165, 42, 42, 0.801);}
+.internacional{display: grid; justify-content: center; margin-left: 15px;}
 
+.Ligaa{display: grid; justify-content: center; margin-left: 15px;}
+
+.Premi{display: grid; justify-content: center; margin-left: 15px;}
+
+.ayud{display: grid; justify-content: center; margin-left: 15px;}
+      
     .internacional:hover{
             transform: scale(1.2);
             cursor: pointer;
@@ -61,17 +51,18 @@
             transform: scale(1.2);
             cursor: pointer;
             transition: all 1s;}
-    a{
-            display: flex;
-            text-decoration: none;
-            font-size: 20px;
-            padding-right: 15px;
-            color: black;}
+
+a{      
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+    color: black;}
             
 
 
 .oferta{
-    font-family: 'Bakbak One', cursive;
+    font-family: 'Holtwood One SC', serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -81,70 +72,31 @@
     font-size: 30px;
     overflow: hidden;}
 
-
 .produccion{
     display: grid;
     grid-template-columns: auto auto auto;
-   justify-content:space-around;
+    justify-content:space-around;}    
 
-}    
+    .producto-text1{
+        font-family: 'Nunito', sans-serif;
+        justify-content: center;
+        margin-top: 10px;}
 
-.producto-text1{
-    font-family: 'Nunito', sans-serif;
-    justify-content: center;
-    margin-top: 10px;
-}
+    .producto-1{        
+        height: 250px;
+        width: auto;
+        align-items: center;}
+    
+    .produn1{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        margin-bottom: 20px;}
 
-
-        .producto-1{
-            
-            height: 250px;
-            width: auto;
-            align-items: center;
-            ;}
-        
-        .produn1{
-            display: grid;
-            justify-content: center;
-        }
-
-                .produn1:hover{
-                    transform: scale(0.9);
-                    cursor: pointer;
-                    transition: all 1s;}
-        
-
-        .producto-2{
-            
-            height: 250px;
-            width: auto;    
-            ;
-            align-items: center;}
-
-                .produn2:hover{
-                    transform: scale(0.9);
-                    cursor: pointer;
-                    transition: all 1s;}
-
-        .producto-3{
-           
-            height: 250px;
-            width: auto;    
-            ;
-            align-items: center;}  
-
-                .produn3:hover{
-                    transform: scale(0.9);
-                    cursor: pointer;
-                    transition: all 1s;} 
-
-.text1{
-    font-family: 'Nunito', sans-serif;
-    justify-content: flex-start;
-    width: 300px; 
-}
-
-
+        .produn1:hover{
+            transform: scale(0.9);
+            cursor: pointer;
+            transition: all 1s;}
 
 .sale-1{
     font-family: 'Bakbak One', cursive;
@@ -156,51 +108,24 @@
     color: brown;
     font-size: 30px;
     overflow: hidden;}
-
-.prod-1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;}
-
-            .producto-4{
-                display: flex; 
-                flex-direction: row;
-                justify-content: flex-start;
-                height: 250px;
-                width: auto;
-                margin: 10px;
-                align-items: center;}
-            .producto-5{
-                display: flex;
-                flex-direction: row;
-                justify-content: end;
-                height: 250px;
-                width: auto;        
-                margin: 10px;
-                align-items: center;} 
-            .producto-6{
-                display: flex;
-                flex-direction: row;
-                justify-content: end;
-                height: 250px;
-                width: auto;    
-                margin: 10px;
-                align-items: center;}   
                
 .header{
     display: flex;
     font-family: 'Holtwood One SC', serif;
     flex-direction: row;
     justify-content: center;
-    margin-top: 30px;}
+    margin-top: 15px;}
+
+#selecciones{
+    margin-top: 27px;}
 
 .banderas{
     height: 100px;
     width: auto}
 
 .bandera-ing{
-    margin-left: 30px;
-    margin-right: 30px;
+
+    margin-top: 27px;
     height: 100px;
     width: auto}
 
@@ -232,7 +157,7 @@
     font-size: 30px;
     overflow: hidden;}
 
-.BOCA{
+.boca{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -243,55 +168,10 @@
     justify-content: flex-end;
     margin-left: 50px;}
 
-.producto-7{
-    display: flex; 
-    height: 250px;
-    width: auto;
-    margin-right: 10px;
-    margin-left: 10px;}
-
- .producto-8{
-    display: flex;
-    height: 250px;
-    width: auto;        
-    margin-right: 10px;
-    margin-left: 10px;}
-
-.producto-9{
-    display: flex;
-    height: 250px;
-    width: auto;    
-    margin-right: 10px;
-    margin-left: 10px; }
-
 .producto-text{
     font-family: 'Bakbak One', cursive;
     justify-content: center;
     margin-bottom: 15px ;}
-
-.texto-boca{
-    display: flex;
-    justify-content: flex-start;
-    text-align: left;
-    margin-right: 50px;
-    margin-bottom: 500px;
-    flex-wrap: nowrap;
-    font-family: 'Ubuntu', sans-serif;
-    height: 500px;
-    width: auto;
-     position: sticky;}
-
-.pro{
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-end;
-    size: auto;
-    margin-bottom: 400px;}
-
-.pro9{ 
-    margin: 10px;}
 
 .form{
     margin-top: 30px;
@@ -303,10 +183,6 @@
     margin-bottom: 20px; 
     margin-left: 30px;}
 
-.Nombre{
-    margin-right: 10px;
-    margin-left: 30px;}
-
 footer{
 display: grid;
 justify-content: center;
@@ -315,43 +191,49 @@ width: 100%;
 height: 60px;
 background-color: rgba(165, 42, 42, 0.801);}
 
-    .icons{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;}
+.icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;}
 
-            .icon-1{
-                display: flex;
-                height: 25px;
-                width: 25px;
-                margin-top: 15px;}
-            .icon-2{
-                display: flex;
-                height: 25px;
-                width: 25px;
-                margin-top: 15px;   }
-            .icon-3{
-                display: flex;
-                height: 25px;
-                width: 25px;
-                margin-top: 15px;}
-            .icon-4{
-                display: flex;
-                height: 25px;
-                width: 25px;
-                margin-top: 15px;}
+    .icon-1{
+        display: flex;
+        height: 25px;
+        width: 25px;
+        margin-top: 15px;}
+    .icon-2{
+        display: flex;
+        height: 25px;
+        width: 25px;
+        margin-top: 15px;}
+    .icon-3{
+        display: flex;
+        height: 25px;
+        width: 25px;
+        margin-top: 15px;}
+    .icon-4{
+        display: flex;
+        height: 25px;
+        width: 25px;
+        margin-top: 15px;}
 
 @media (max-width:660px){
     .head {
         grid-template-columns: auto;
-       }
-}
+        justify-content: center;}}
+
+@media(max-width:660px){
+    .produn1{
+        grid-template-columns: auto;
+        justify-content: center}}
+
+@media(max-width:660px){
+    .produccion{
+        justify-content: center;}}
 
 @media (max-width: 1225px){
     .produccion{
         grid-template-columns: auto;
-        justify-content: center;
-    }
-}   
+        justify-content: center;}}   
  
