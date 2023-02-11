@@ -1,7 +1,6 @@
 @import "_vars";
 @import "_mixing";
 @import "_fonts";
-@import "_commons";
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Holtwood+One+SC&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
 
@@ -29,7 +28,7 @@ body{
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: center;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: $MainFont;
     font-weight: $textBold;
     @include bordes(solid, $secondary,thin);
     background-color: $mainColor;
@@ -75,7 +74,7 @@ a{
     color: $secondary;
 }
 .oferta{
-    font-family: 'Holtwood One SC', serif;
+    font-family: $SecondFont;
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -112,7 +111,7 @@ a{
     }
     
     .producto-text1{
-        font-family: 'Nunito', sans-serif;
+        font-family: $ThirdFont;
         font-size: $textM;
         justify-content: center;
         margin-top: 10px;
@@ -122,7 +121,7 @@ a{
  
 
 .sale-1{
-    font-family: 'Bakbak One', cursive;
+    font-family: $FourthFont;
     display: grid;
     justify-content: center;
     border: 50%;
@@ -132,9 +131,9 @@ a{
     font-size: $textM;
     overflow: hidden;}
 
-.header{
+.header2{
     display: flex;
-    font-family: 'Holtwood One SC', serif;
+    font-family: $SecondFont;
     flex-direction: row;
     justify-content: center;
     margin-top: 15px;
@@ -152,7 +151,7 @@ a{
     margin-bottom: 30px;}
 }
 .header-mundi{
-    font-family: 'Bakbak One', cursive;
+    font-family: $FourthFont;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -164,7 +163,7 @@ a{
     overflow: hidden;}
 
 .header-arg{
-    font-family: 'Bakbak One', cursive;
+    font-family: $FourthFont;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -176,13 +175,13 @@ a{
     overflow: hidden;}  
 
 .producto-text{
-    font-family: 'Bakbak One', cursive;
+    font-family: $FourthFont;
     justify-content: center;
     margin-bottom: 15px ;}
 
 .form{
     margin-top: 30px;
-    font-family: 'Bakbak One', cursive;
+    font-family: $FourthFont;
     background-color: $mainColor;
     margin-bottom: 30px;}
 
@@ -209,19 +208,13 @@ background-color: $mainColor;
         margin-top: 15px;}
     .icon-2{
         display: flex;
-        height: 25px;
-        width: 25px;
-        margin-top: 15px;}
+        @extend .icon-1;}
     .icon-3{
         display: flex;
-        height: 25px;
-        width: 25px;
-        margin-top: 15px;}
+        @extend .icon-1;}
     .icon-4{
         display: flex;
-        height: 25px;
-        width: 25px;
-        margin-top: 15px;}
+        @extend .icon-1;}
     }
 }
 

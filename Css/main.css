@@ -119,26 +119,26 @@ a {
   overflow: hidden;
 }
 
-.header {
+.header2 {
   display: flex;
   font-family: "Holtwood One SC", serif;
   flex-direction: row;
   justify-content: center;
   margin-top: 15px;
 }
-.header .banderas {
+.header2 .banderas {
   height: 100px;
   width: auto;
 }
-.header #selecciones {
+.header2 #selecciones {
   margin-top: 27px;
 }
-.header .bandera-ing {
+.header2 .bandera-ing {
   margin-top: 27px;
   height: 100px;
   width: auto;
 }
-.header .premier-h {
+.header2 .premier-h {
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -203,7 +203,7 @@ footer .icons {
   flex-wrap: nowrap;
   justify-content: center;
 }
-footer .icons .icon-1 {
+footer .icons .icon-1, footer .icons .icon-4, footer .icons .icon-3, footer .icons .icon-2 {
   display: flex;
   height: 25px;
   width: 25px;
@@ -211,21 +211,12 @@ footer .icons .icon-1 {
 }
 footer .icons .icon-2 {
   display: flex;
-  height: 25px;
-  width: 25px;
-  margin-top: 15px;
 }
 footer .icons .icon-3 {
   display: flex;
-  height: 25px;
-  width: 25px;
-  margin-top: 15px;
 }
 footer .icons .icon-4 {
   display: flex;
-  height: 25px;
-  width: 25px;
-  margin-top: 15px;
 }
 
 @media (max-width: 660px) {
