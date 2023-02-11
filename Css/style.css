@@ -1,107 +1,76 @@
  @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Holtwood+One+SC&display=swap'); 
  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
-.titulo
-{
-    display: flex;
+
+ body{
+    background-image: url(../Images/stylish-hexagonal-line-pattern-background_1017-19742.jpg); 
+    background-repeat:repeat ;
+    backface-visibility: 70%;
+    display: grid;}
+
+.titulo{
+    display: grid;
     justify-content: center;
+     }
+
+.titulo-texto{
     font-size: 50px;
-    font-family: 'Rubik Bubbles', cursive;
-}
+    font-family: 'Rubik Bubbles', cursive;}
+        
+    .titulo-texto:hover{
+        color: rgb(114, 0, 0);
+        cursor: pointer;}
 
-.titulo:hover{
-color: rgb(114, 0, 0);
-cursor: pointer;
-}
 
-div{
-    display: flex;
-}
 
-.contenedor
-{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+.internacional{ display: grid; justify-content: center; margin-left: 15px;}
+
+.Ligaa{ display: grid; justify-content: center; margin-left: 15px;}
+
+.Premi{ display: grid; justify-content: center; margin-left: 15px;}
+
+.ayud{ display: grid; justify-content: center; margin-left: 15px;}
+
+.head{ display: grid;
+    grid-template-columns: auto auto auto auto;
+   justify-content: center;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold; font-weight: bolder;
     border-style: solid; border-color: black; border-width: thin;
-    background-color:  rgba(165, 42, 42, 0.801);
-}
-.internacional:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-    transition: all 1s; 
-}
-.Ligaa:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-    transition: all 1s;
-}
-.Premi:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-    transition: all 1s;
-}
-.ayud:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-    transition: all 1s;
-}
-a   {
-    display: flex;
-   text-decoration: none;
-   font-size: 20px;
-   padding-right: 15px;
-   color: black;
-}
-footer{
-    justify-content: center;
-    margin-bottom: 0px;
-    width: 100%;
-    height: 60px;
-    background-color: rgba(165, 42, 42, 0.801);
-}
-.icons{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-top: 19px;
-    
+    background-color:  rgba(165, 42, 42, 0.801);}
 
-    }
-    .icon-1{
-        display: flex;
-        height: 25px;
-        width: 25px;
-        margin-top: 15px;
-    
-    
-    }
-    .icon-2{
-        display: flex;
-        height: 25px;
-        width: 25px;
-        margin-top: 15px;   
-    
-    }
-    .icon-3{
-        display: flex;
-        height: 25px;
-        width: 25px;
-        margin-top: 15px;
-    
-    }
-    .icon-4{
-        display: flex;
-        height: 25px;
-        width: 25px;
-        margin-top: 15px;
-    
-    }
+        
+.contenedor1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold; font-weight: bolder;
+    border-style: solid; border-color: black; border-width: thin;
+    background-color:  rgba(165, 42, 42, 0.801);}
+
+    .internacional:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+            transition: all 1s; }
+    .Ligaa:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+            transition: all 1s;}
+    .Premi:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+            transition: all 1s;}
+    .ayud:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+            transition: all 1s;}
+    a{
+            display: flex;
+            text-decoration: none;
+            font-size: 20px;
+            padding-right: 15px;
+            color: black;}
+            
+
 
 .oferta{
-
     font-family: 'Bakbak One', cursive;
     display: flex;
     flex-direction: row;
@@ -110,102 +79,105 @@ footer{
     margin-top: 40px;
     text-decoration: underline; color: rgb(221, 4, 4);
     font-size: 30px;
-    overflow: hidden;
-    }
+    overflow: hidden;}
 
 
+.produccion{
+    display: grid;
+    grid-template-columns: auto auto auto;
+   justify-content:space-around;
 
-        .prod{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        border-style: solid; border-color:brown;
-        margin-bottom: 50px;
-    }
-    .producto-1{
-    display: flex; 
-    flex-direction: row;
+}    
+
+.producto-text1{
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+        .producto-1{
+            
+            height: 250px;
+            width: auto;
+            align-items: center;
+            ;}
+        
+        .produn1{
+            display: grid;
+            justify-content: center;
+        }
+
+                .produn1:hover{
+                    transform: scale(0.9);
+                    cursor: pointer;
+                    transition: all 1s;}
+        
+
+        .producto-2{
+            
+            height: 250px;
+            width: auto;    
+            ;
+            align-items: center;}
+
+                .produn2:hover{
+                    transform: scale(0.9);
+                    cursor: pointer;
+                    transition: all 1s;}
+
+        .producto-3{
+           
+            height: 250px;
+            width: auto;    
+            ;
+            align-items: center;}  
+
+                .produn3:hover{
+                    transform: scale(0.9);
+                    cursor: pointer;
+                    transition: all 1s;} 
+
+.text1{
+    font-family: 'Nunito', sans-serif;
     justify-content: flex-start;
-    height: 250px;
-    width: auto;
-    align-items: center;
-    margin: 10px;
-   
-    }
+    width: 300px; 
+}
 
-    .produn1:hover{
-        transform: scale(0.9);
-        cursor: pointer;
-        transition: all 1s;
-    }
-    
 
-    .producto-2{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    height: 250px;
-    width: auto;    
-    margin: 10px;
-    align-items: center;
-    }
-    .produn2:hover{
-        transform: scale(0.9);
-        cursor: pointer;
-        transition: all 1s;
-    }
 
-    .producto-3{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    height: 250px;
-    width: auto;    
-    margin: 10px;
-    align-items: center;
-    }  
-    .produn3:hover{
-        transform: scale(0.9);
-        cursor: pointer;
-        transition: all 1s;
-    } 
-
-    .sale-1{
+.sale-1{
     font-family: 'Bakbak One', cursive;
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: center;
     border: 50%;
     margin-top: 60px;
     margin-bottom: 40px;
     color: brown;
     font-size: 30px;
-    overflow: hidden;
-    }
-    .prod-1{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        
-        }
-        .producto-4{
-            display: flex; 
-            flex-direction: row;
-            justify-content: flex-start;
-            height: 250px;
-            width: auto;
-            margin: 10px;
-            align-items: center;
-            }
-         .producto-5{
-            display: flex;
-            flex-direction: row;
-            justify-content: end;
-            height: 250px;
-            width: auto;        
-            margin: 10px;
-            align-items: center;
-            } 
+    overflow: hidden;}
+
+.prod-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;}
+
+            .producto-4{
+                display: flex; 
+                flex-direction: row;
+                justify-content: flex-start;
+                height: 250px;
+                width: auto;
+                margin: 10px;
+                align-items: center;}
+            .producto-5{
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                height: 250px;
+                width: auto;        
+                margin: 10px;
+                align-items: center;} 
             .producto-6{
                 display: flex;
                 flex-direction: row;
@@ -213,31 +185,29 @@ footer{
                 height: 250px;
                 width: auto;    
                 margin: 10px;
-                align-items: center;
-                }   
+                align-items: center;}   
                
 .header{
     display: flex;
     font-family: 'Holtwood One SC', serif;
     flex-direction: row;
     justify-content: center;
-    margin-top: 30px;
-}
+    margin-top: 30px;}
+
 .banderas{
     height: 100px;
-    width: auto
-}
-.bandera-ing
-{
+    width: auto}
+
+.bandera-ing{
     margin-left: 30px;
     margin-right: 30px;
     height: 100px;
-    width: auto
-}
+    width: auto}
+
 .premier-h{
     margin-top: 30px;
-    margin-bottom: 30px;
-}
+    margin-bottom: 30px;}
+
 .header-mundi{
     font-family: 'Bakbak One', cursive;
     display: flex;
@@ -248,9 +218,8 @@ footer{
     margin-bottom: 40px;
     text-decoration: underline; color: rgb(221, 4, 4);
     font-size: 30px;
-    overflow: hidden;
-    
-}
+    overflow: hidden;}
+
 .header-arg{
     font-family: 'Bakbak One', cursive;
     display: flex;
@@ -261,49 +230,44 @@ footer{
     margin-left: 60px;
     text-decoration: underline; color: rgb(1, 19, 184);
     font-size: 30px;
-    overflow: hidden;
-    
-}
+    overflow: hidden;}
 
 .BOCA{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center;}
+
 .prod-arg{
     display: flex;
     justify-content: flex-end;
-    margin-left: 50px;
-}
+    margin-left: 50px;}
+
 .producto-7{
     display: flex; 
     height: 250px;
     width: auto;
     margin-right: 10px;
-    margin-left: 10px;
-    
-    }
+    margin-left: 10px;}
+
  .producto-8{
     display: flex;
     height: 250px;
     width: auto;        
     margin-right: 10px;
-    margin-left: 10px;
-    
-    } 
-    .producto-9{
-        display: flex;
-        height: 250px;
-        width: auto;    
-        margin-right: 10px;
-        margin-left: 10px; 
-        }   
-            .producto-text{
-                font-family: 'Nunito', sans-serif;
-            justify-content: center;
-            margin-top: 10px;
-            }
+    margin-left: 10px;}
+
+.producto-9{
+    display: flex;
+    height: 250px;
+    width: auto;    
+    margin-right: 10px;
+    margin-left: 10px; }
+
+.producto-text{
+    font-family: 'Bakbak One', cursive;
+    justify-content: center;
+    margin-bottom: 15px ;}
 
 .texto-boca{
     display: flex;
@@ -315,8 +279,8 @@ footer{
     font-family: 'Ubuntu', sans-serif;
     height: 500px;
     width: auto;
-     position: sticky;
-}
+     position: sticky;}
+
 .pro{
     display: flex;
     flex-direction: row; 
@@ -324,26 +288,70 @@ footer{
     justify-content: center;
     align-content: flex-end;
     size: auto;
-    margin-bottom: 400px;
-}
+    margin-bottom: 400px;}
 
-.pro9{
-    
-    margin: 10px;   
-}
+.pro9{ 
+    margin: 10px;}
+
 .form{
     margin-top: 30px;
     font-family: 'Bakbak One', cursive;
     background-color:  rgba(165, 42, 42, 0.637);
-    margin-bottom: 30px;
-}
+    margin-bottom: 30px;}
+
 .formulario{
     margin-bottom: 20px; 
-    margin-left: 30px;
-    
-}
+    margin-left: 30px;}
+
 .Nombre{
     margin-right: 10px;
-    margin-left: 30px;
-    
+    margin-left: 30px;}
+
+footer{
+display: grid;
+justify-content: center;
+margin-bottom: 0px;
+width: 100%;
+height: 60px;
+background-color: rgba(165, 42, 42, 0.801);}
+
+    .icons{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;}
+
+            .icon-1{
+                display: flex;
+                height: 25px;
+                width: 25px;
+                margin-top: 15px;}
+            .icon-2{
+                display: flex;
+                height: 25px;
+                width: 25px;
+                margin-top: 15px;   }
+            .icon-3{
+                display: flex;
+                height: 25px;
+                width: 25px;
+                margin-top: 15px;}
+            .icon-4{
+                display: flex;
+                height: 25px;
+                width: 25px;
+                margin-top: 15px;}
+
+@media (max-width:660px){
+    .head {
+        grid-template-columns: auto;
+       }
 }
+
+@media (max-width: 1225px){
+    .produccion{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}   
+ 
