@@ -27,6 +27,7 @@ _Este proyecto fue creado completamente en el programa "Visual Studio"_
 * [VisualStudio](https://code.visualstudio.com/) - Visual Studio
 * [Bootstrap](https://getbootstrap.com/) - Bootstrap
 * [WOW](https://wowjs.uk/) - Wowjs
+* [SASS](https://sass-lang.com/install) - SASS
 
 ## Autor ✒️
 
