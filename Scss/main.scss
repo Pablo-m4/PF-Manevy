@@ -12,7 +12,7 @@ body{
 
 
 .titulo{
-    display: grid;
+    display: flex;
     justify-content: center;
         .titulo-texto{
             font-family: 'Rubik Bubbles', cursive;
@@ -20,9 +20,7 @@ body{
             &:hover{
                 color: rgb(114, 0, 0);
                 cursor: pointer;
-                }
-            }
-        }
+                }}}
 
 .head{
     display: grid;
@@ -33,39 +31,34 @@ body{
     @include bordes(solid, $secondary,thin);
     background-color: $mainColor;
     .internacional  {
-        display: grid; justify-content:center; margin-left: $Margin;
+        display: grid; justify-content:center; margin: $MarginS; 
         &:hover{
             transform: scale(1.2);
                 cursor: pointer;
                 transition: all 1s;
-        }
-    }
+        }}
     .Ligaa{
         @extend .internacional;
         &:hover{
             transform: scale(1.2);
                 cursor: pointer;
                 transition: all 1s;
-        }
-    }
+        }}
     .Premi {
         @extend .internacional;
         &:hover{
             transform: scale(1.2);
                 cursor:pointer;
                 transition: all 1s;
-        }
-    }
+        }}
     .ayud{
         @extend .internacional;
         &:hover{
             transform: scale(1.2);
                 cursor: pointer;
                 transition: all 1s;
-        }
-    }
-    
-}
+        }}}
+
 a{
     display:flex;
     text-decoration: none;
@@ -105,18 +98,14 @@ a{
     .producto-1{        
         height: 250px;
         width: auto;
-        align-items: center;
-    }
-    
+        align-items: center;}
+
     .producto-text1{
         font-family: $ThirdFont;
         font-size: $textM;
         justify-content: center;
         margin-top: 10px;
-    }
-}
-
- 
+    }}
 
 .sale-1{
     font-family: $FourthFont;
@@ -134,13 +123,13 @@ a{
     grid-template-columns: auto auto auto;
     justify-content: center;
     font-family: $SecondFont;
-    margin-top: 15px;
+    margin-top: $Margin;
     
     .decoration{
         display: grid;
         justify-content: center;}
     h1{
-        margin-top: 15px;}
+        margin-top: $Margin;}
     .banderas{
         height: 100px;
         width: auto}
@@ -156,8 +145,8 @@ a{
         margin-top:30px;
         margin-bottom: 30px;
         margin-left: 65px;
-        margin-right: 30px;}
-}
+        margin-right: 30px;}}
+
 .header-mundi{
     font-family: $FourthFont;
     display: flex;
@@ -185,7 +174,7 @@ a{
 .producto-text{
     font-family: $FourthFont;
     justify-content: center;
-    margin-bottom: 15px ;}
+    margin-bottom: $Margin ;}
 
 .form{
     margin-top: 30px;
@@ -197,6 +186,26 @@ a{
     margin-bottom: 20px; 
     margin-left: 30px;}
 
+.error-404{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    .error-text{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: 'Rubik Bubbles', cursive;
+        font-size: $textXL;
+        color: rgb(114, 0, 0);}
+    h2{
+        font-family: $FourthFont;}
+    a{
+        font-family: $FourthFont;
+        font-size: $textM;
+        &:hover{
+            color: rgb(114, 0, 0);
+            cursor: pointer;
+            }}}
+    
 footer{
 display: grid;
 justify-content: center;
@@ -212,7 +221,7 @@ background-color: $mainColor;
         display: flex;
         height: 25px;
         width: 25px;
-        margin-top: 15px;
+        margin-top: $Margin;
         margin-right: 10px;
         margin-left: 10px;}
     .icon-2{
@@ -223,14 +232,15 @@ background-color: $mainColor;
         @extend .icon-1;}
     .icon-4{
         display: flex;
-        @extend .icon-1;}
-    }
-}
+        @extend .icon-1;}}}
 
 @media (max-width:660px){
     .head {
         grid-template-columns: auto;
-        justify-content: center;}}
+        justify-content: center;
+            .a{
+                font-size: $textS;
+            }}}
 
 @media (max-width: 1225px){
     .produccion{
@@ -259,5 +269,39 @@ background-color: $mainColor;
         grid-template-columns: auto;
         justify-content: center;
 
-    }
-}
+    }}
+@media (max-width:571px){
+    .titulo{
+    .titulo-texto{
+        font-family: 'Rubik Bubbles', cursive;
+            font-size: $textM;
+    }}}
+
+@media (max-width:750px){
+    .error-404{
+        grid-template-columns: auto;
+        justify-content: center;
+        .error-text{
+            justify-content: center;
+        }}}
+
+@media (max-width:500px){
+    .error-image{
+        height: 450px;       
+    }}
+@media (max-width:450px){
+    .error-image{
+        height: 400px;       
+    }}
+@media (max-width:400px){
+    .error-image{
+        height: 350px;       
+    }}
+@media (max-width:350px){
+    .error-image{
+        height: 300px;       
+    }}
+@media (max-width:300px){
+    .error-image{
+        height: 250px;       
+    }}
